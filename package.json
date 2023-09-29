@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "name": "my-nextron-app",
+  "description": "My application description",
+  "version": "1.0.0",
+  "author": "Bang The <bangthe2222@gmail.com>",
+  "main": "app/background.js",
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "build:all": "nextron build --all",
+    "build:win32": "nextron build --win --ia32",
+    "build:win64": "nextron build --win --x64",
+    "build:mac": "nextron build --mac --x64",
+    "build:linux": "nextron build --linux",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@types/mongodb": "^4.0.7",
+    "dotenv": "^16.3.1",
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.1.0",
+    "file-saver": "^2.0.5",
+    "fs": "^0.0.1-security",
+    "mongodb": "^5.7.0",
+    "react-hook-form": "^7.45.4",
+    "react-icons": "^4.10.1",
+    "serialport": "^11.0.1",
+    "tw-elements": "^1.0.0-beta2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.5",
+    "@types/node": "^18.17.0",
+    "@types/react": "^18.0.26",
+    "autoprefixer": "^10.4.7",
+    "dotenv-webpack": "^8.0.1",
+    "electron": "^21.3.3",
+    "electron-builder": "^23.6.0",
+    "next": "^12.3.4",
+    "nextron": "^8.5.0",
+    "postcss": "^8.4.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.9.4"
+  }
+}

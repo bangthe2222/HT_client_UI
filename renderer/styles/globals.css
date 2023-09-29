@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-blue-pastel-0 ;
+  }
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container-snap::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container-snap {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@layer components{
+  .side-bar-child {
+    @apply bg-blue-pastel-5
+  }
+  
+  .table-input-button {
+    @apply bg-slate-50 m-[2px] p-[5px] text-center rounded-[5px] shadow-sm hover:bg-green-100
+  }
+}
